@@ -10,7 +10,15 @@ public class Ex01 : MonoBehaviour
     void Start()
     {
         storeMoney(10f);
-        Debug.Log($"Total money in box: {moneyBox}"); 
+        Debug.Log($"Total money in box: {moneyBox}");
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) {
+            storeMoney(10f);
+            Debug.Log($"Total money in box: {moneyBox}"); 
+        }
     }
 
     //Function that stores the given money
