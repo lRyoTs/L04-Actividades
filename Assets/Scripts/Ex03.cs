@@ -9,11 +9,11 @@ public class Ex03 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log($"The new vector is {generateVector(lowRange, upRange)}");
+        Debug.Log($"The new vector is {GenerateVector(lowRange, upRange)}");
     }
 
-    //Generate a new vector3 given limit
-    private Vector3 generateVector(float lowerLimit, float upperLimit)
+    //Generate a new vector3 in given limits
+    private Vector3 GenerateVector(float lowerLimit, float upperLimit)
     {
         float randomX = Random.Range(lowerLimit, upperLimit); //Gets a random position in X
         float randomY = Random.Range(lowerLimit, upperLimit); //Gets a random position in Y
